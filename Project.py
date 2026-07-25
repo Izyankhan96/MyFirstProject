@@ -12,8 +12,8 @@ for i in range(len(color)):
 import random
 guess = input("Guess the color :")
 result = random.choice(color)
-if guess == random:
+if guess.lower == result.lower:
     print("Thats correct")
 else:
     print("Thats incorrect")
-    print(f"The color was {result}")    
+    print(f"The color was {result}")
