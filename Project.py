@@ -16,4 +16,4 @@ if guess == random:
     print("Thats correct")
 else:
     print("Thats incorrect")
-    print(f"The color was {result}")
+    print(f"The color was {result}")    
