@@ -1,31 +1,24 @@
-print("Welcome")
-name = input("What is your name? :")
-verified_names = ["Izyan", "Aiza", "Chachu"]
-while name not in verified_names:
-    print("Invalid name please try again")
-    name = input("What is your name? :")
-print("Welcome back")
-print("Guess a color given below")
-color = ["Blue", "Red", "Green", "Silver"]
-for i in range(len(color)):
-    print(i + 1, color[i])
+print("Hello Welcome Please Login below")
+name = input("Name :")
+verified_name = "Izyan"
+while name != verified_name:
+    print("Sorry I dont see your name Please try again")
+    name = input("Name :")
+print("Please Enter your password below")
+password = input("Password :")
+verified_password = "Welcome7643"
+while password != verified_password:
+    print("Incorrect Password")
+    password = input("Password :")
+print("Welcome![before we continue you have to guess the correct questions]")
 import random
-guess = input("Guess the color :")
-result = random.choice(color)
-if guess.lower == result:
-    print("Thats correct")
-else:
-    print("Thats incorrect")
-    print(f"The color was {result}")
-print("Guess a car below")
-cars = ["Tesla","Ioniq 5"]
-for i in range(len(cars)):
-    print(i + 1, cars[i])
-import random
-guess2 = input("Enter here :")
-result2 = random.choice(cars)
-if guess2 == result2:
-    print("Thats correct")
-else:
-    print("Thats incorrect")
-    print(result2)
+colors = ["Red","Blue","Green"]
+for i in range(len(colors)):
+    print(i + 1, colors[i])
+result = random.choice(colors)
+answer = input("Enter your answer here :")
+while answer != random.choice:
+    print("Sorry That is incorrect please try again")
+    answer = input("Enter your answer here :")
+print("That is correct!")
+print(result)
